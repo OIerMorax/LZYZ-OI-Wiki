@@ -1,0 +1,62 @@
+site_name: LZYZ OI Wiki
+
+markdown_extensions:
+  - toc:
+      title: 目录
+  - pymdownx.arithmatex:
+      generic: true
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - javascripts/katex.js 
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js  
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js
+
+extra_css:
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css
+
+# Contents
+nav:
+  - 简介:
+    - Getting Started: index.md
+    - 在这里可以做什么: home\What.md
+    - 在这里不能做什么: home\Don't.md
+    - 关于: home\information.md
+  - 名单:
+    - 2021级及之前: member\past.md
+    - 2022级: member\2022.md
+    - 2023级: member\2023.md
+  - 历史:
+    - 2021及之前: history\past.md
+    - 2022级: history\2022.md
+    - 2023级: history\2023.md
+  - 赛绩:
+    - 以前: achievements\past.md
+    - CSP2023: achievements\CSP2023.md
+    - NOIP2023: achievements\NOIP2023.md
+  - 项目:
+    - 介绍: project\introduction.md
+    - 双人对战: project\No.2.md
+    - 关机装置: project\No.1.md
+  - 新闻: news.md
+theme:
+  name: material
+  features:
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.path
+    - navigation.top
+  palette:
+    primary: white
